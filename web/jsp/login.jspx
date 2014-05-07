@@ -1,0 +1,22 @@
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0"
+          xmlns:local="/WEB-INF/tag/local.tld" xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <jsp:directive.page contentType="text/html; charset=UTF-8" />
+    <html><head><title>Login</title></head>
+    <body>
+    <jsp:include page="template/header.jspx" />
+    <h3><local:message value="LOGIN" /></h3>
+    <hr/>
+    <form name="loginForm" method="POST" action="controller">
+        <local:message value="NAME" /><br/>
+        <input type="text" name="login" value="" />
+        <br/>
+        <local:message value="PASSWORD" /><br/>
+        <input type="password" name="password" value="" />
+        <br/>
+        <button type="submit" name="command" value="login"><local:message value="LOGIN"/></button>
+        <button type="submit" name="command" value="registration"><local:message value="REGISTRATION"/></button>
+    </form><hr/>
+    </body>
+    </html>
+</jsp:root>
+
