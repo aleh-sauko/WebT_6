@@ -1,0 +1,49 @@
+<weap:Weapons xmlns:weap="http://www.example.com/Weapon">
+  <!--1 or more repetitions:-->
+  <weapon serialId="string" kind="Gun">
+    <name>string</name>
+    <damage>1000.00</damage>
+    <holder>
+      <capacity>100</capacity>
+      <caliber>1.5E2</caliber>
+    </holder>
+  </weapon>
+
+    <weapon serialId="HEW332323" kind="Rifle">
+        <name>Big bom</name>
+        <damage>100.00</damage>
+        <holder>
+            <capacity>40</capacity>
+            <caliber>12.5E2</caliber>
+        </holder>
+    </weapon>
+
+
+    <weapon serialId="HA34023" kind="Bazooka">
+        <name>Big boom BOOM!</name>
+        <damage>300.00</damage>
+        <holder>
+            <capacity>40</capacity>
+            <caliber>12.5E2</caliber>
+        </holder>
+    </weapon>
+
+    <weapon serialId="HEW30332323" kind="Rifle">
+        <name>Big bom</name>
+        <damage>100.00</damage>
+        <holder>
+            <capacity>40</capacity>
+            <caliber>12.5E2</caliber>
+        </holder>
+    </weapon>
+
+
+    <weapon serialId="HEW33323" kind="Rifle">
+        <name>Big bom</name>
+        <damage>100.00</damage>
+        <holder>
+            <capacity>40</capacity>
+            <caliber>12.5E2</caliber>
+        </holder>
+    </weapon>
+</weap:Weapons>

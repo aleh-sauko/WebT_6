@@ -13,6 +13,12 @@
             <button type="submit" name="command" value="logout"><local:message value="LOGOUT"/></button>
         </c:if>
         <button type="submit" name="command" value="changeLanguage"><local:message value="CHANGE_LANGUAGE"/></button>
+        <button type="submit" name="command" value="listWeapons"><local:message value="LIST_WEAPONS"/></button>
+        <select name="parser">
+            <option value="SAX">SAX</option>
+            <option value="StAX">StAX</option>
+            <option value="DOM">DOM</option>
+        </select>
     </form>
 
     </body>

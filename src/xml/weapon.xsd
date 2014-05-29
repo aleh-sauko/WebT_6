@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/Weapon" xmlns:tns="http://www.example.com/Weapon">
+    <element name="Weapons">
+        <complexType>
+            <sequence>
+                <element name="weapon" type="tns:Weapon" minOccurs="1" maxOccurs="unbounded" />
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="Weapon">
+        <sequence>
+            <element name="name" type="string" />
+            <element name="damage" type="decimal" />
+            <element name="holder" type="tns:Holder" />
+        </sequence>
+        <attribute name="serialId" type="tns:SerialId" use="required" />
+        <attribute name="kind" type="tns:Kind" use="required" />
+    </complexType>
+
+    <simpleType name="SerialId">
+        <restriction base="ID">
+            <pattern value="[a-zA-Z]{2}[a-zA-Z0-9_]*"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Kind">
+        <restriction base="string">
+            <enumeration value="Gun"/>
+            <enumeration value="Rifle"/>
+            <enumeration value="Bazooka"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="Holder">
+        <sequence>
+            <element name="capacity" type="integer" />
+            <element name="caliber" type="float" />
+        </sequence>
+    </complexType>
+</schema>

@@ -17,6 +17,7 @@ public class RequestHelper {
         commands.put("logout", new LogoutCommand());
         commands.put("registration", new RegistrationCommand());
         commands.put("changeLanguage", new ChangeLanguageCommand());
+        commands.put("listWeapons", new ListWeaponsCommand());
     }
 
     public Command getCommand(HttpServletRequest request) {

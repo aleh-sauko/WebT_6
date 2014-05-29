@@ -12,6 +12,10 @@ public class ConfigurationManager {
     public static final String ERROR_PAGE_PATH = "ERROR_PAGE_PATH";
     public static final String LOGIN_PAGE_PATH = "LOGIN_PAGE_PATH";
     public static final String MAIN_PAGE_PATH = "MAIN_PAGE_PATH";
+    public static final String WEAPONS_PAGE_PATH = "WEAPONS_PAGE_PATH";
+
+    public static String PATH_TO_XML = "/Volumes/Macintosh HD/Users/aleh/IdeaProjects/WebT_6/src/xml/weapon.xsd.xml";
+
 
     private ResourceBundle resourceBundle;
 
